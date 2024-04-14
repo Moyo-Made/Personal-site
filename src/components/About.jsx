@@ -16,7 +16,7 @@ const About = () => {
 				{/* Right section */}
 				<div className="sm:flex sm:justify-center md:mt-0 mt-4">
 					<div className="block">
-						<p className="font-normal text-[17px] md:max-w-[470px] max-w-[270px]">
+						<p className="font-medium text-[18px] md:max-w-[470px] max-w-[300px]">
 							I&#39;m a skilled front-end developer with a flare for creating
 							beautiful and well structured web solutions that scales using
 							React and other front-end technologies. I&#39;m flexible and can
