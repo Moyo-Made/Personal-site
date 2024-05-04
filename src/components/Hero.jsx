@@ -5,7 +5,7 @@ import HeroImage from "../assets/home image.png";
 
 const Hero = () => {
 	return (
-		<section id="hero">
+		<section id="home">
 			<div className="flex md:flex-row flex-1 flex-col justify-evenly space-x-14 items-center border-b-2 border-[#e6e3e3b5]">
 				{/* Left side */}
 				<div className="flex justify-start md:mt-24 mt-10 -ml-10">
