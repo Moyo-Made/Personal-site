@@ -1,25 +1,23 @@
-import About from "./components/About"
-import Contact from "./components/Contact"
-import Footer from "./components/Footer"
-import Hero from "./components/Hero"
-import Navbar from "./components/Navbar"
-import Portfolio from "./components/Portfolio"
-import Services from "./components/Services"
-import Skills from "./components/Skills"
+import Pages from "./Pages";
+import About from "./components/About";
+import CaseStudy from "./components/CaseStudy";
+// import Contact from "./components/Contact"
+// import Footer from "./components/Footer"
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
     <div className="font-Poppins bg-[#f2f1f1]">
-      <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Portfolio />
-      <Services />
-      <Contact />
-      <Footer />
-    </div>
-  )
-}
+      <Routes>
+        <Route path="/" element={<Pages />} />
+        <Route path="/case-study" element={<CaseStudy />} />
+      </Routes>
 
-export default App
+      {/* <Contact />
+      <Footer /> */}
+    </div>
+  );
+};
+
+export default App;
