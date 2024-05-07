@@ -3,6 +3,7 @@ import { BsBoxArrowUpRight } from "react-icons/bs";
 import { data } from "../constants/data";
 import CaseStudy from "../assets/file-case.png";
 import { Link } from "react-router-dom";
+import Portfolio2 from "./Portfolio2";
 
 const Portfolio = () => {
   return (
@@ -17,7 +18,7 @@ const Portfolio = () => {
             My Recent Works
           </span>
           <div className="flex flex-col justify-around items-center mt-3">
-            {data.map(({ id, image, title, desc, github, demo }) => {
+            {data.map(({ id, image, title, desc, demo }) => {
               return (
                 <div className="flex md:flex-row flex-col" key={id}>
                   <div
@@ -69,6 +70,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
+      <Portfolio2 />
     </section>
   );
 };
