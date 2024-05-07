@@ -1,4 +1,5 @@
 import About from "./components/About";
+import ContactForm from "./components/ContactForm";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
@@ -14,6 +15,7 @@ const Pages = () => {
       <Portfolio />
       <Skills />
       <Services />
+      <ContactForm />
     </div>
   );
 };
