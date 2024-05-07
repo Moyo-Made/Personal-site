@@ -4,7 +4,6 @@ import CaseStudy from "./components/CaseStudy";
 // import Contact from "./components/Contact"
 // import Footer from "./components/Footer"
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
