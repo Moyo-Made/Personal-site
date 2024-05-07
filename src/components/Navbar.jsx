@@ -3,6 +3,8 @@ import logo from "/logo.png";
 import close from "../assets/close.svg";
 import menu from "../assets/menu.svg";
 import { useEffect, useState } from "react";
+import Pages from "../Pages";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -30,8 +32,12 @@ const Navbar = () => {
       } transition-all duration-300`}
     >
       <div className="flex items-center md:ml-40">
-        <img src={logo} alt="logo" className="w-[30px] h-[20px]  ml-3" />
-        <span className="font-medium text-[18px] ml-2">Moyomade</span>
+        <a href="#home">
+          <div className="flex">
+            <img src={logo} alt="logo" className="w-[30px] h-[20px] ml-3" />
+            <span className="font-medium text-[18px] ml-2 -mt-1">Moyomade</span>
+          </div>
+        </a>
       </div>
 
       <ul className="list-none sm:flex hidden justify-center items-center flex-1 ml-64">
