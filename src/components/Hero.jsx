@@ -8,7 +8,7 @@ const Hero = () => {
 		<section id="home">
 			<div className="flex md:flex-row flex-1 flex-col justify-evenly space-x-14 items-center border-b-2 border-[#e6e3e3b5]">
 				{/* Left side */}
-				<div className="flex justify-start md:mt-24 mt-10 -ml-10">
+				<div className="flex justify-start md:mt-24 mt-16 -ml-10">
 					<div className="flex flex-col">
 						<p className=" text-[24px] uppercase font-normal">
 							Hi, I&#39;m <span className="font-semibold">Moyomade.</span>{" "}
@@ -59,7 +59,7 @@ const Hero = () => {
 					</div>
 					{/* Right Side */}
 				</div>
-				<div className="md:mt-14 mt-8 md:pr-0 pr-14">
+				<div className="md:mt-20 mt-8 md:pr-0 pr-14">
 					<img src={HeroImage} alt="Home Image" width={320} height={320} />
 				</div>
 			</div>
