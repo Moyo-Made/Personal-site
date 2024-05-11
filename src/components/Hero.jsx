@@ -2,8 +2,13 @@ import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import HeroImage from "../assets/home image.png";
+import PropTypes from "prop-types";
+import { CgMail } from "react-icons/cg";
 
-const Hero = () => {
+const Hero = ({ email }) => {
+	const handleButtonClick = () => {
+		window.location.href = `mailto:${email}`;
+	};
 	return (
 		<section id="home">
 			<div className="flex md:flex-row flex-1 flex-col justify-evenly space-x-14 items-center border-b-2 border-[#e6e3e3b5]">
@@ -21,13 +26,17 @@ const Hero = () => {
 								className="w-[150px] p-2 bg-black text-white rounded-tl-md
 							rounded-bl-md"
 							>
-								<span className="text-[17px]">Got a project?</span>
+								<a href="#contact" className="text-[17px]">
+									Got a project?
+								</a>
 							</button>
 							<button
 								className="w-[150px] p-2 bg-[#ffff] text-black rounded-tr-md
 							rounded-br-md"
 							>
-								<span className="text-[17px]">Let&#39;s talk</span>
+								<a href="#contact" className="text-[17px]">
+									Let&#39;s talk
+								</a>
 							</button>
 						</div>
 
@@ -55,6 +64,9 @@ const Hero = () => {
 							>
 								<FaXTwitter />
 							</a>
+							<button onClick={handleButtonClick}>
+								<CgMail />
+							</button>
 						</div>
 					</div>
 					{/* Right Side */}
@@ -65,6 +77,9 @@ const Hero = () => {
 			</div>
 		</section>
 	);
+};
+Hero.propTypes = {
+	email: PropTypes.string.isRequired,
 };
 
 export default Hero;

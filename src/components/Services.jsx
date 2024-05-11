@@ -1,9 +1,26 @@
+import { useScroll, motion, useTransform } from "framer-motion";
+import { useRef } from "react";
+
 const Services = () => {
+	const ref = useRef(null);
+	const { scrollYProgress } = useScroll({
+		target: ref,
+		offset: ["0 1", "1.33 1"],
+	});
+	const scaleProgress = useTransform(scrollYProgress, [0, 0.7], [0.8, 1]);
+	const opacityProgress = useTransform(scrollYProgress, [0, 0.7], [0.6, 1]);
 	return (
-		<section id="section">
+		<motion.div
+			ref={ref}
+			style={{
+				scale: scaleProgress,
+				opacity: opacityProgress,
+			}}
+			id="section"
+		>
 			<div className="">
 				<div className="text-center">
-					<h3 className="mt-8 font-bold text-[22px]">Services</h3>
+					<h3 className="md:mt-8 -mt-10 font-bold text-[22px]">Services</h3>
 					<span className="text-[#7d7979fb]">What I Offer</span>
 				</div>
 				<div className="flex md:flex-row flex-col justify-center items-center gap-10 mt-8 text-center ">
@@ -54,7 +71,7 @@ const Services = () => {
 					</div>
 				</div>
 			</div>
-		</section>
+		</motion.div>
 	);
 };
 
