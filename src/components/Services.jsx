@@ -20,7 +20,7 @@ const Services = () => {
 		>
 			<div className="">
 				<div className="text-center">
-					<h3 className="md:mt-8 -mt-10 font-bold text-[22px]">Services</h3>
+					<h3 className="md:mt-8 -mt-7 font-bold text-[22px]">Services</h3>
 					<span className="text-[#7d7979fb]">What I Offer</span>
 				</div>
 				<div className="flex md:flex-row flex-col justify-center items-center gap-10 mt-8 text-center ">
