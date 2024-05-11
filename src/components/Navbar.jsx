@@ -3,8 +3,6 @@ import logo from "/logo.png";
 import close from "../assets/close.svg";
 import menu from "../assets/menu.svg";
 import { useEffect, useState } from "react";
-import Pages from "../Pages";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
