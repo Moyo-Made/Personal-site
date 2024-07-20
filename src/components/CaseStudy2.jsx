@@ -7,10 +7,10 @@ const CaseStudy2 = () => {
 		<section id="case-study">
 			<div className="flex justify-center">
 				<h1
-					className="md:w-auto w-[350px] md:mt-2 mt-10 md:text-[18px] text-[17px] text-[#00000] 
+					className="md:w-auto w-[350px] md:mt-4 mt-10 md:text-[18px] text-[17px] text-[#00000] 
 					font-bold md:ml-0 ml-[3.5rem]"
 				>
-					Case Study 2: Real Time Application
+					Case Study 3: Real Time Application
 				</h1>
 			</div>
 
