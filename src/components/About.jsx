@@ -62,24 +62,24 @@ const About = () => {
 				</div>
 			</div>
 
-			<div className="md:flex justify-center items-center mt-10 pr-20 sm:flex hidden">
-				<button className="bg-white text-black py-1 md:w-60 w-32">
+			<div className="md:flex justify-center items-center text-center mt-10 pr-20 sm:flex hidden">
+				<div className="bg-white text-black py-1 md:w-60 w-32">
 					<span className="uppercase md:text-[15px] text-[12px] font-semibold">
 						2+ <br /> Years of Experience
 					</span>
-				</button>
+				</div>
 
-				<button className="bg-black text-white py-1 md:w-60 w-32">
+				<div className="bg-black text-white py-1 md:w-60 w-32">
 					<span className="uppercase md:text-[15px] text-[12px] font-semibold">
 						25+ <br /> Projects Completed
 					</span>
-				</button>
+				</div>
 
-				<button className="bg-white text-black py-1 md:w-60 w-32">
+				<div className="bg-white text-black py-1 md:w-60 w-32">
 					<span className="uppercase md:text-[15px] text-[12px] font-semibold">
 						10+ <br /> Happy Clients
 					</span>
-				</button>
+				</div>
 			</div>
 		</motion.div>
 	);
