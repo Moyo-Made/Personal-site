@@ -7,19 +7,13 @@ const CaseStudy1 = () => {
 	return (
 		<section id="case-study">
 			<CaseNav />
-			<div className="flex flex-1 justify-center items-center -mt-2">
-				<div className="text-center">
-					<p className="md:mt-10 mt-5 font-bold md:text-[22px] text-[18px] md:-ml-0 -ml-8 mb-1">
-						Case Study
-					</p>
-				</div>
-			</div>
+
 			<div className="flex justify-center">
 				<h1
-					className="md:w-auto w-[360px] mt-1 md:text-[18px] text-[17px]
+					className="md:w-auto w-[360px] mt-4 md:text-[18px] text-[17px]
 					font-bold md:ml-0 ml-2"
 				>
-					Case Study 1: Revamping Mega League Website: Empowering High-School
+					Case Study 2: Revamping Mega League Website: Empowering High-School
 					Students for Social Change
 				</h1>
 			</div>
